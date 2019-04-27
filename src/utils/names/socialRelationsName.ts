@@ -1,0 +1,3 @@
+const SOCIAL_RELATIONS_NAME = {};
+
+export default SOCIAL_RELATIONS_NAME;
