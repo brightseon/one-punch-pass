@@ -1,3 +1,45 @@
 .section {
+    border: 2px solid #C9D6DE;
+    border-radius: 25px;
     
+    a {
+        all: unset;
+        width: 100%;
+        height: 100%;
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+}
+
+.summary:hover {
+    background-color: $summaryColor;
+    border: none;
+}
+
+.physical-exercise-health:hover {
+    background-color: $physicalExerciseHealthColor;
+    border: none;
+}
+
+.communication:hover {
+    background-color: $communicationColor;
+    border: none;
+}
+
+.social-relations:hover {
+    background-color: $socialRelationsColor;
+    border: none;
+}
+
+.art-experience:hover {
+    background-color: $artExperienceColor;
+    border: none;
+}
+
+.nature-inquiry:hover {
+    background-color: $natureInquiryColor;
+    border: none;
 }
