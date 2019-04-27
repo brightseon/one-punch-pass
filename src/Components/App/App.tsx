@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './styles.scss';
-import { Switch, Route } from 'react-router-dom';
-import Home from '../../Router/Home';
-import Summary from '../../Router/Summary';
-import PhysicalExerciseHealth from '../../Router/PhysicalExerciseHealth';
-import Communication from '../../Router/Communication';
-import SocialRelations from '../../Router/SocialRelations';
-import ArtExperience from '../../Router/ArtExperience';
-import NatureInquiry from '../../Router/NatureInquiry';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import Home from '../../Routes/Home';
+import Summary from '../../Routes/Summary';
+import PhysicalExerciseHealth from '../../Routes/PhysicalExerciseHealth';
+import Communication from '../../Routes/Communication';
+import SocialRelations from '../../Routes/SocialRelations';
+import ArtExperience from '../../Routes/ArtExperience';
+import NatureInquiry from '../../Routes/NatureInquiry';
 import { ROOT, SUMMARY, PHYSICAL_EXERCISE_HEALTH, COMMUNICATION, SOCIAL_RELATIONS, ART_EXPERIENCE, NATURE_INQUIRY } from '../../utils/paths';
 
 const App = () => (
@@ -20,6 +20,7 @@ const App = () => (
             <Route path={ SOCIAL_RELATIONS } component={ SocialRelations } />
             <Route path={ ART_EXPERIENCE } component={ ArtExperience } />
             <Route path={ NATURE_INQUIRY } component={ NatureInquiry } />
+            <Redirect from="*" to="/" />
         </Switch>
     </div>
 );
