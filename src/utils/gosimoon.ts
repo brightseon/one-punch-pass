@@ -1,3 +1,6 @@
+import { SectionType } from './types';
+import { SUMMARY, PHYSICAL_EXERCISE_HEALTH, COMMUNICATION, SOCIAL_RELATIONS, ART_EXPERIENCE, NATURE_INQUIRY } from './paths';
+
 // 총론
 export const summary = {
     // 구성 방향
@@ -36,3 +39,36 @@ export const artExperience = {};
 
 // 자연탐구
 export const natureInquiry = {};
+
+export const sections : SectionType[] = [
+    {
+        key : 'summary',
+        sectionName : '총론',
+        sectionPath : SUMMARY
+    },
+    {
+        key : 'physicalExerciseHealth',
+        sectionName : '신체운동·건강',
+        sectionPath : PHYSICAL_EXERCISE_HEALTH
+    },
+    {
+        key : 'communication',
+        sectionName : '의사소통',
+        sectionPath : COMMUNICATION
+    },
+    {
+        key : 'socialRelations',
+        sectionName : '사회관계',
+        sectionPath : SOCIAL_RELATIONS
+    },
+    {
+        key : 'artExperience',
+        sectionName : '예술경험',
+        sectionPath : ART_EXPERIENCE
+    },
+    {
+        key : 'natureInquiry',
+        sectionName : '자연탐구',
+        sectionPath : NATURE_INQUIRY
+    }
+];
