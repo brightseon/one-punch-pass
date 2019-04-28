@@ -1,19 +1,19 @@
-const COMPOSITION_DIRECTION = 'compositionDirection';
-const PURPOSE = 'purpose';
-const GOAL = 'goal';
-const ORGANIZATION = 'organization';
-const OPERATION = 'operation';
-const TEACHING_METHOD = 'teachingMethod';
-const EVALUATION = 'evaluation';
+const COMPOSITION_DIRECTION_KEY = 'compositionDirection';
+const PURPOSE_KEY = 'purpose';
+const GOAL_KEY = 'goal';
+const ORGANIZATION_KEY = 'organization';
+const OPERATION_KEY = 'operation';
+const TEACHING_METHOD_KEY = 'teachingMethod';
+const EVALUATION_KEY = 'evaluation';
 
 const SUMMARY_KEY = {
-    compositionDirection : COMPOSITION_DIRECTION,
-    purpose : PURPOSE,
-    goal : GOAL,
-    organization : ORGANIZATION,
-    operation : OPERATION,
-    teachingMethod : TEACHING_METHOD,
-    evaluation : EVALUATION
+    COMPOSITION_DIRECTION_KEY,
+    PURPOSE_KEY,
+    GOAL_KEY,
+    ORGANIZATION_KEY,
+    OPERATION_KEY,
+    TEACHING_METHOD_KEY,
+    EVALUATION_KEY
 };
 
 export default SUMMARY_KEY;

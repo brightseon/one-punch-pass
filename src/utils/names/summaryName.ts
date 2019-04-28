@@ -1,19 +1,19 @@
-const COMPOSITION_DIRECTION = '구성 방향';
-const PURPOSE = '목적';
-const GOAL = '목표';
-const ORGANIZATION = '편성';
-const OPERATION = '운영';
-const TEACHING_METHOD = '교수·학습 방법';
-const EVALUATION = '평가';
+const COMPOSITION_DIRECTION_NAME = '구성 방향';
+const PURPOSE_NAME = '목적';
+const GOAL_NAME = '목표';
+const ORGANIZATION_NAME = '편성';
+const OPERATION_NAME = '운영';
+const TEACHING_METHOD_NAME = '교수·학습 방법';
+const EVALUATION_NAME = '평가';
 
 const SUMMARY_NAME = {
-    compositionDirection : COMPOSITION_DIRECTION,
-    purpose : PURPOSE,
-    goal : GOAL,
-    organization : ORGANIZATION,
-    operation : OPERATION,
-    teachingMethod : TEACHING_METHOD,
-    evaluation : EVALUATION
+    COMPOSITION_DIRECTION_NAME,
+    PURPOSE_NAME,
+    GOAL_NAME,
+    ORGANIZATION_NAME,
+    OPERATION_NAME,
+    TEACHING_METHOD_NAME,
+    EVALUATION_NAME
 };
 
 export default  SUMMARY_NAME;
