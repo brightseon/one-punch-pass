@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.scss';
 import Section from '../../Components/Section';
-import sections from '../../utils/sections';
+import sections from '../../data/sections';
 
 const Home = () => (
     <div className={ styles.home }>
