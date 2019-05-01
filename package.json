@@ -35,7 +35,8 @@
     "webpack-dev-server": "^3.3.1"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build" : "webpack"
   },
   "homepage": "https://inspiring-dubinsky-033740.netlify.com"
 }
