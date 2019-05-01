@@ -11,7 +11,7 @@ export interface SummaryAnswerSheetType {
     detail? : SummaryDetailAnswerType[];
 };
 
-interface SummaryDetailAnswerType {
+export interface SummaryDetailAnswerType {
     detailKey : string;
     detailName : string;
     detailSheet : string[];

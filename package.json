@@ -36,5 +36,6 @@
   },
   "scripts": {
     "start": "webpack-dev-server"
-  }
+  },
+  "homepage": "https://inspiring-dubinsky-033740.netlify.com"
 }

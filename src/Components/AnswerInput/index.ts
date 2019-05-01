@@ -1,1 +1,1 @@
-export { default } from './AnswerInput';
+export { default } from './AnswerInputContainer';

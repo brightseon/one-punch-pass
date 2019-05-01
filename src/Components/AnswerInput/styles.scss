@@ -31,8 +31,8 @@
             outline: none;
         }
 
-        .hidden-input {
-            display: none;
+        .fail-input {
+            border: 1px solid $wrongAnswerBorderColor;
         }
     }
 }
