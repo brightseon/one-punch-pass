@@ -3,10 +3,10 @@ import styles from './styles.scss';
 import PageTitle from '../../Components/PageTitle';
 import AnswerInput from '../../Components/AnswerInput';
 import answerSheets from '../../data/answerSheets';
+import Button from '../../Components/Button';
 
 const { SUMMARY_SHEET } = answerSheets;
 
-// 총론
 const Summary = () => (
     <div className={ styles.summary }>
         <PageTitle currentPageName="총론" />
@@ -19,24 +19,34 @@ const Summary = () => (
                         </div>
                         <div className={ styles.lastColumn }>
                             {
-                                answerSheet ? answerSheet.map((_, idx) => (
-                                    <AnswerInput key={ `answer_${ idx }` } idx={ idx } />
-                                )) : detail.map(({ detailKey, detailName, detailSheet }) => (
-                                        <div className={ styles.detailBox } key={ detailKey }>
-                                            <div className={ styles.detailFirstColumnTitleBox }>
-                                                <span className={ styles.detailFirstColumnTitle }>{ detailName }</span>
+                                answerSheet ? (
+                                    <div className={ styles.answerInputBox }>
+                                        {
+                                            answerSheet.map((answer, idx) => (
+                                                <AnswerInput key={ `answer_${ idx }` } idx={ idx } answer={ answer } />
+                                            ))
+                                        }
+                                    </div>
+                                ) : (
+                                        detail.map(({ detailKey, detailName, detailSheet }) => (
+                                            <div className={ styles.detailBox } key={ detailKey }>
+                                                <div className={ styles.detailFirstColumnTitleBox }>
+                                                    <span className={ styles.detailFirstColumnTitle }>{ detailName }</span>
+                                                </div>
+                                                <div className={ styles.detailLastColumnBox }>
+                                                    {
+                                                        detailSheet.map((detail, idx) => (
+                                                            <AnswerInput key={ `detail_${ idx }` } idx={ idx } answer={ detail } />
+                                                        ))
+                                                    }
+                                                    <Button text={ '확인' } />
+                                                </div>
                                             </div>
-                                            <div className={ styles.detailLastColumnBox }>
-                                                {
-                                                    detailSheet.map((_, idx) => (
-                                                        <AnswerInput key={ `detail_${ idx }` } idx={ idx } />
-                                                    ))
-                                                }
-                                            </div>
-                                        </div>
+                                        )
                                     )
                                 )
                             }
+                            { answerSheet && <Button text={ '확인' } /> }
                         </div>
                     </div>
                 ))

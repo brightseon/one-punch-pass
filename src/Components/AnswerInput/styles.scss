@@ -30,5 +30,9 @@
             color: $textColor;
             outline: none;
         }
+
+        .hidden-input {
+            display: none;
+        }
     }
 }

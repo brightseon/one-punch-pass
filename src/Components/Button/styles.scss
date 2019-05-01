@@ -1,0 +1,16 @@
+.container {
+    padding-top: 17px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .button {
+        all: unset;
+        width: 100px;
+        height: 49px;
+        border-radius: 15px;
+        background-color: #ECF0F1;
+        color: $textColor;
+        text-align: center;
+    }
+}
