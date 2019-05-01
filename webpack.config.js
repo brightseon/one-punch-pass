@@ -5,8 +5,8 @@ const Dotenv = require('dotenv-webpack');
 const PORT = process.env.PORT || 3000;
 
 const config = {
-    // mode : 'development',
-    mode : 'production',
+    mode : 'development',
+    // mode : 'production',
     entry : path.join(__dirname, '/src/index.tsx'),
     output : {
         filename : 'bundle.[hash].js',
