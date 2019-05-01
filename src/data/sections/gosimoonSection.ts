@@ -1,4 +1,4 @@
-import { SectionType } from '../../utils/types';
+import { SectionType } from '../../types/types';
 import keys from '../keys';
 import names from '../names';
 import { SUMMARY_PATH, PHYSICAL_EXERCISE_HEALTH_PATH, COMMUNICATION_PATH, SOCIAL_RELATIONS_PATH, ART_EXPERIENCE_PATH, NATURE_INQUIRY_PATH } from '../../utils/paths';

@@ -1,4 +1,4 @@
-import { SectionType } from '../../utils/types';
+import { SectionType } from '../../types/types';
 import keys from '../keys';
 import names from '../names';
 

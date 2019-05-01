@@ -1,6 +1,6 @@
 import React, { SFC } from 'react';
 import { Link } from 'react-router-dom';
-import { SectionType } from '../../utils/types';
+import { SectionType } from '../../types/types';
 import styles from './styles.scss';
 
 interface IProps {
