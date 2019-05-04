@@ -28,7 +28,7 @@ const LoginContainer : SFC<IProps> = ({ setIsLoggedIn }) => {
     const login = () => {
         console.log('password : ', password);
         console.log('process.env.PASSWORD : ', process.env.PASSWORD);
-        if(password === process.env.PASSWORD) {
+        if(password === process.env.LOGIN_PASSWORD) {
             setIsLoggedIn(true);
         } else {
             setLoginFail(true);
