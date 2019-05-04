@@ -11,11 +11,12 @@ interface IProps {
     passwordRef : Ref<HTMLInputElement>;
     resetPassword : () => void;
     login : () => void;
+    isLoginFail : boolean;
 };
 
-const LoginPresenter : SFC<IProps> = ({ password, onChange, enterLogin, passwordRef, resetPassword, login }) => (
+const LoginPresenter : SFC<IProps> = ({ password, onChange, enterLogin, passwordRef, resetPassword, login, isLoginFail }) => (
     <div className={ styles.login }>
-        <div className={ styles.loginInputBox }>
+        <div className={ `${ styles.loginInputBox } ${ isLoginFail ? styles.loginFail : '' }` }>
             <input className={ styles.loginInput } type="password" value={ password } onChange={ onChange } onKeyPress={ enterLogin } ref={ passwordRef } />
             <img className={ styles.resetButton } src={ ClearButton } onClick={ resetPassword } />
         </div>

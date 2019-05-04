@@ -9,6 +9,7 @@ interface IProps {
 const LoginContainer : SFC<IProps> = ({ setIsLoggedIn }) => {
     const passwordRef : Ref<HTMLInputElement> = useRef();
     const [password, setPassword] = useState('');
+    const [isLoginFail, setLoginFail] = useState(false);
     
     const focus = () => {
         passwordRef.current.focus();
@@ -19,12 +20,16 @@ const LoginContainer : SFC<IProps> = ({ setIsLoggedIn }) => {
     const onChange : ChangeEventHandler = (e : ChangeEvent<HTMLInputElement>) => {
         const { target : { value } } = e;
         
+        resetLoginFail();
+
         setPassword(value);
     };
-
+    
     const login = () => {
         if(password === process.env.PASSWORD) {
             setIsLoggedIn(true);
+        } else {
+            setLoginFail(true);
         }
     };
 
@@ -36,14 +41,22 @@ const LoginContainer : SFC<IProps> = ({ setIsLoggedIn }) => {
         }
     };
 
+    const resetLoginFail = () => {
+        if(isLoginFail) {
+            setLoginFail(false);
+        }
+    };
+
     const resetPassword = () => {
         if(password.length > 0) {
             setPassword('');
+            resetLoginFail();
         }
     };
 
     return <LoginPresenter enterLogin={ enterLogin } login={ login } onChange={ onChange }
-        password={ password } passwordRef={ passwordRef } resetPassword={ resetPassword } />;
+        password={ password } passwordRef={ passwordRef } resetPassword={ resetPassword }
+        isLoginFail={ isLoginFail } />;
 }
 
 export default LoginContainer;

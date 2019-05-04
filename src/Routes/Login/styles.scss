@@ -21,12 +21,43 @@
             outline: none;
             border: none;
         }
-
+        
         .reset-button {
             display: none;
         }
     }
+
+    .login-fail {
+        animation : shakingBox .5s;
+        border : 1px solid $wrongAnswerBorderColor;
+    }
 }
+
+@keyframes shakingBox {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    20% {
+        transform: translateX(10px);
+    }
+
+    40% {
+        transform: translateX(-5px); 
+    }
+
+    60% {
+        transform: translateX(5px); 
+    }
+    
+    80% {
+        transform: translateX(-2.5px);
+    }
+
+    100% {
+        transform: translateX(2.5px);
+    }
+};
 
 @keyframes viewResetButton {
     from {
@@ -36,4 +67,4 @@
     to {
         opacity: 1;
     }
-}
+};
