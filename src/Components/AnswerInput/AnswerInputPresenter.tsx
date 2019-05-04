@@ -16,8 +16,7 @@ const AnswerInputPresenter : SFC<IProps> = ({ idx, inputKey, value, typingAnswer
             <span className={ styles.index }>{ `${ idx + 1 }.` }</span>
         </div>
         <div className={ styles.inputBox }>
-            <input className={ `${ styles.input } ${ (isShow && isFail) ? styles.failInput : '' }` } name={ `${ inputKey }_answer_${ idx }` } type="text" value={ value } onChange={ typingAnswer } />
-            {/* <input className={ `${ styles.hiddenInput } ${ styles.input }` } name={ `result_${ idx }` } type="text" value={ answer } readOnly /> */}
+            <input className={ `${ styles.input } ${ (isShow && isFail) ? styles.failInput : '' }` } name={ `${ inputKey }_answer_${ idx }` } type="text" value={ value } onChange={ typingAnswer } autoComplete="off" />
         </div>
     </div>
 );
