@@ -17,7 +17,7 @@ interface IProps {
 const LoginPresenter : SFC<IProps> = ({ password, onChange, enterLogin, passwordRef, resetPassword, login, isLoginFail }) => (
     <div className={ styles.login }>
         <div className={ `${ styles.loginInputBox } ${ isLoginFail ? styles.loginFail : '' }` }>
-            <input className={ styles.loginInput } type="password" value={ password } onChange={ onChange } onKeyPress={ enterLogin } ref={ passwordRef } />
+            <input className={ styles.loginInput } type="password" value={ password } onChange={ onChange } onKeyPress={ enterLogin } ref={ passwordRef } autoComplete="off" />
             <img className={ styles.resetButton } src={ ClearButton } onClick={ resetPassword } />
         </div>
         <Button text={ '로그인' } clickCheckButton={ login } />
