@@ -18,7 +18,9 @@ const LoginPresenter : SFC<IProps> = ({ password, onChange, enterLogin, password
     <div className={ styles.login }>
         <div className={ `${ styles.loginInputBox } ${ isLoginFail ? styles.loginFail : '' }` }>
             <input className={ styles.loginInput } type="password" value={ password } onChange={ onChange } onKeyPress={ enterLogin } ref={ passwordRef } autoComplete="off" />
-            <img className={ styles.resetButton } src={ ClearButton } onClick={ resetPassword } />
+            <div className={ styles.resetButtonBox }>
+                <img className={ styles.resetButton } src={ ClearButton } onClick={ resetPassword } />
+            </div>
         </div>
         <Button text={ '로그인' } clickCheckButton={ login } />
     </div>

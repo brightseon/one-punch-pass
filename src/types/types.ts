@@ -16,3 +16,16 @@ export interface SummaryDetailAnswerType {
     detailName : string;
     detailSheet : string[];
 }
+
+export interface SocialRelationsAnswerSheetType {
+    key : string;
+    answerSheetName : string;
+    answerSheets? : string[];
+    detail? : SocialRelationsDetailType[];
+};
+
+export interface SocialRelationsDetailType {
+    detailKey : string;
+    detailName : string;
+    detailSheets : string[][];
+};

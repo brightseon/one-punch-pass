@@ -1,78 +1,10 @@
 .summary {
+    width: 100%;
+    height: 100%;
     padding: 30px;
 
     .summary-body {
         width: 100%;
         height: 100%;
-
-        // .row {
-        //     display: flex;
-        //     border: 1px solid $summaryColor;
-        //     border-bottom: none;
-
-        //     &:last-child {
-        //         border-bottom: 1px solid $summaryColor;
-                
-        //         .first-column {
-        //             padding: 0 20px 0 21px;
-        //         }
-
-        //         .last-column {
-        //             padding: 0;
-        //         }
-        //     }
-
-        //     .first-column {
-        //         flex: 0.2;
-        //         padding: 0 24px;
-        //         background-color: $summaryColor;
-        //         display: flex;
-        //         justify-content: center;
-        //         align-items: center;
-
-        //         .first-column-title {
-        //             font-size: 30px;
-        //             color: $textColor;
-        //             white-space: pre-wrap;
-        //             text-align: center;
-        //         }
-        //     }
-
-        //     .last-column {
-        //         flex: 1;
-        //         padding: 18px;
-
-        //         .answer-input-box {
-        //             width: 100%;
-        //         }
-
-        //         .detail-box {
-        //             display: flex;
-
-        //             &:first-child {
-        //                 border-bottom: 1px solid $summaryColor;
-        //             }
-
-        //             .detail-first-column-title-box {
-        //                 flex: 0.3;
-        //                 display: flex;
-        //                 justify-content: center;
-        //                 align-items: center;
-        //                 background-color: $summaryDetailColor;
-
-        //                 .detail-first-column-title {
-        //                     color: $textColor;
-        //                     white-space: pre;
-        //                     font-size: 20px;
-        //                 }
-        //             }
-
-        //             .detail-last-column-box {
-        //                 flex: 1;
-        //                 padding: 18px;
-        //             }
-        //         }
-        //     }
-        // }
     }
 }

@@ -1,16 +1,19 @@
 .login {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     .login-input-box {
-        width: 290px;
+        flex: 1;
         margin-top: 17px;
         margin-right: 15px;
         border: 1px solid $borderColor;
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
         
-        &:hover .reset-button {
+        &:hover .reset-button-box .reset-button {
             display: inline;
             @include viewResetButtonMixin();
         }
@@ -22,8 +25,13 @@
             border: none;
         }
         
-        .reset-button {
-            display: none;
+        .reset-button-box {
+            width: 15px;
+            height: 15px;
+            
+            .reset-button {
+                display: none;
+            }
         }
     }
 
