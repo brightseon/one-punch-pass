@@ -32,10 +32,17 @@ class AnswerInputContainer extends Component<IProps, any> {
         });
     };
 
+    resetAnswer = () => {
+        this.setState({
+            [this.stateName] : '',
+            isFail : false
+        });
+    };
+
     render() {
         const value = this.state[this.stateName];
 
-        return <AnswerInputPresenter { ...this.props } value={ value }
+        return <AnswerInputPresenter { ...this.props } value={ value } resetAnswer={ this.resetAnswer }
             typingAnswer={ this.typingAnswer } isFail={ this.state.isFail } />;
     }
 };

@@ -3,6 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include smallDevice {
+        & {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
     
     .login-input-box {
         flex: 1;
@@ -12,6 +19,14 @@
         display: flex;
         align-items: center;
         padding-right: 10px;
+
+        @include smallDevice {
+            & {
+                flex: 0;
+                margin-top: 0;
+                margin-right: 0;
+            }
+        }
         
         &:hover .reset-button-box .reset-button {
             display: inline;

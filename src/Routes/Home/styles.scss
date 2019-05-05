@@ -5,4 +5,23 @@
     grid-gap: 60px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
+    @include smallDevice {
+        & {
+            width: 100%;
+            padding: 10px;
+            grid-gap: 10px;
+            grid-template-columns: repeat(1, 80%);
+            grid-template-rows: auto;
+            justify-content: center;
+        }
+    }
+
+    @include mobileSize {
+        & {
+            width: 100%;
+            padding: 20px;
+            grid-gap: 20px;
+        }
+    }
 }
