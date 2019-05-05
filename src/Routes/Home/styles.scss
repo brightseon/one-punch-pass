@@ -1,4 +1,5 @@
 .home {
+    width: 100%;
     height: 100%;
     padding: 74px 33px;
     display: grid;
@@ -8,7 +9,6 @@
 
     @include smallDevice {
         & {
-            width: 100%;
             padding: 10px;
             grid-gap: 10px;
             grid-template-columns: repeat(1, 80%);
@@ -19,7 +19,6 @@
 
     @include mobileSize {
         & {
-            width: 100%;
             padding: 20px;
             grid-gap: 20px;
         }
