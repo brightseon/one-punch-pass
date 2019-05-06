@@ -9,6 +9,12 @@
         }
     }
 
+    @include mobileSize {
+        & { 
+            padding: 0;
+        }
+    }
+
     .summary-body {
         width: 100%;
         height: 100%;

@@ -15,17 +15,32 @@ export interface SummaryDetailAnswerType {
     detailKey : string;
     detailName : string;
     detailSheet : string[];
-}
-
-export interface SocialRelationsAnswerSheetType {
-    key : string;
-    answerSheetName : string;
-    answerSheets? : string[];
-    detail? : SocialRelationsDetailType[];
 };
 
-export interface SocialRelationsDetailType {
-    detailKey : string;
-    detailName : string;
-    detailSheets : string[][];
+export interface AnswerSheetType {
+    areaTarget : string;
+    contentCategories : ContentCategoriesType[];
+};
+
+export interface ContentCategoriesType {
+    key : string;
+    contentCategoryGoal : string;
+    contentCategory : ContentCategoryType;
+}
+
+export interface ContentCategoryType {
+    title : string;
+    details : DetailsType[];
+};
+
+export interface DetailsType {
+    key : string;
+    name : string;
+    detailSheets : DetailSheetsTypes[];
+};
+
+export interface DetailSheetsTypes {
+    three? : string;
+    four? : string;
+    five? : string;
 };

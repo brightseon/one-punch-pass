@@ -29,3 +29,11 @@
         @content;
     };
 };
+
+@mixin titleBox {
+    flex: 0.2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,10 +1,8 @@
-const AREA_TARGET_KEY = 'areaTarget';
-const CONTENT_CATEGORY_GOAL_KEY = 'contentCategoryGoal';
-const RESPECT_KEY = 'respect';
-const CONTROL_KEY = 'control';
-const CHERISHED_KEY = 'cherished';
-const LIVING_TOGETHER_KEY = 'livingTogether';
-const INTEREST_KEY = 'interest';
+const AUTONOMY_GOAL_KEY = 'autonomy';
+const EMOTION_GOAL_KEY = 'emotion';
+const RECONCILIATION_GOAL_KEY = 'reconciliation';
+const SOCIAL_VALUE_GOAL_KEY = 'socialValue';
+const SOCIAL_GOAL_KEY = 'social';
 
 const KNOW_ME_AND_CHERISH_KEY = 'knowMeAndCherish';
 const YOURSELF_KEY = 'yourself';
@@ -19,14 +17,15 @@ const COMMUNITY_KEY = 'community';
 const OUR_COUNTRY_KEY = 'ourCountry';
 const WORLD_AND_VARIOUS_CULTURES_KEY = 'worldAndVariousCultures';
 
-const SOCIAL_RELATIONS_KEY = {
-    AREA_TARGET_KEY,
-    CONTENT_CATEGORY_GOAL_KEY,
-    RESPECT_KEY,
-    CONTROL_KEY,
-    CHERISHED_KEY,
-    LIVING_TOGETHER_KEY,
-    INTEREST_KEY,
+const CONTENT_CATEGORIES_KEYS = {
+    AUTONOMY_GOAL_KEY,
+    EMOTION_GOAL_KEY,
+    RECONCILIATION_GOAL_KEY,
+    SOCIAL_VALUE_GOAL_KEY,
+    SOCIAL_GOAL_KEY
+};
+
+const DETAIL_KEYS = {
     KNOW_ME_AND_CHERISH_KEY,
     YOURSELF_KEY,
     EMOTIONAL_EXPRESSION_KEY,
@@ -39,6 +38,11 @@ const SOCIAL_RELATIONS_KEY = {
     COMMUNITY_KEY,
     OUR_COUNTRY_KEY,
     WORLD_AND_VARIOUS_CULTURES_KEY
+};
+
+const SOCIAL_RELATIONS_KEY = {
+    CONTENT_CATEGORIES_KEYS,
+    DETAIL_KEYS
 };
 
 export default SOCIAL_RELATIONS_KEY;

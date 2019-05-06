@@ -1,0 +1,42 @@
+.social-relations {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .social-relations-body {
+        width: 100%;
+        height: 100%;
+        flex: 1;
+
+        .row {
+            width: 100%;
+            display: flex;
+
+            .first-column {
+                flex: 0.2;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $socialRelationsColor;
+
+                .first-column-title {
+                    color: $textColor;
+                    text-align: center;
+                }
+            }
+
+            .last-column {
+                flex: 1;
+                display: flex;
+                align-items: center;
+
+                .column {
+                    
+                }
+            }
+        }
+    }
+}

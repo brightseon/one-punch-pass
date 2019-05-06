@@ -1,0 +1,21 @@
+.block {
+    flex: 1;
+    color: $textColor;
+
+    .row {
+
+        .content-category {
+            display: flex;
+
+            .title {
+                background-color: $socialRelationsColor;
+                @include titleBox;
+            }
+
+            .sub-title {
+                flex: 1;
+                display: flex;
+            }
+        }
+    }
+}
