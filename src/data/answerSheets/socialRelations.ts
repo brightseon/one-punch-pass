@@ -78,6 +78,7 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                             {
                                 three : '나에 대해 관심을 갖는다.',
                                 four : '나에 대해 알아본다.',
+                                five : '나에 대해 알아본다.'
                             },
                             {
                                 three : '나와 다른 사람의 차이에 관심을 갖는다.',
@@ -86,7 +87,8 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                             },
                             {
                                 three : '나를 소중하게 여긴다.',
-                                four : '나에 대해 긍정적으로 생각하고 나를 소중하게 여긴다.'
+                                four : '나에 대해 긍정적으로 생각하고 나를 소중하게 여긴다.',
+                                five : '나에 대해 긍정적으로 생각하고 나를 소중하게 여긴다.'
                             }
                         ]
                     },
@@ -102,6 +104,7 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                             {
                                 three : '내가 하고 싶은 일을 선택해 본다.',
                                 four : '하고 싶은 일을 계획하고 해 본다.',
+                                five : '하고 싶은 일을 계획하고 해 본다.'
                             }
                         ]
                     }
@@ -120,7 +123,8 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                         detailSheets : [
                             {
                                 three : '자신에게 여러 가지 감정이 있음을 안다.',
-                                four : '자신의 감정을 알고 표현한다.'
+                                four : '자신의 감정을 알고 표현한다.',
+                                five : '자신의 감정을 알고 표현한다.'
                             },
                             {
                                 three : '다른 사람의 감정에 관심을 갖는다.',
@@ -135,6 +139,7 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                         detailSheets : [
                             {
                                 three : '자신의 감정을 조절해본다.',
+                                four : '자신의 감정을 조절해본다.',
                                 five : '자신의 감정을 상황에 맞게 조절한다.'
                             }
                         ]
@@ -154,6 +159,7 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                         detailSheets : [
                             {
                                 three : '가족의 소중함을 안다.',
+                                four : '가족의 소중함을 안다.',
                                 five : '가족의 의미와 소중함을 안다.'
                             },
                             {
@@ -191,11 +197,14 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                         name : GET_ALONG_WELL,
                         detailSheets : [
                             {
-                                four : '친구와 협동하며 놀이한다.'
+                                three : '친구와 함께 놀이한다.',
+                                four : '친구와 협동하며 놀이한다.',
+                                five : '친구와 협동하며 놀이한다.'
                             },
                             {
                                 three : '나와 친구의 의견에 차이가 있음을 안다.',
-                                four : '친구와의 갈등을 긍정적인 방법으로 해결한다.'
+                                four : '친구와의 갈등을 긍정적인 방법으로 해결한다.',
+                                five : '친구와의 갈등을 긍정적인 방법으로 해결한다.'
                             }
                         ]
                     },
@@ -208,7 +217,9 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                                 five : '다른 사람과 도움을 주고 받고, 서로 협력한다.'
                             },
                             {
-                                three : '교사 및 주변 사람과 화목하게 지낸다.'
+                                three : '교사 및 주변 사람과 화목하게 지낸다.',
+                                four : '교사 및 주변 사람과 화목하게 지낸다.',
+                                five : '교사 및 주변 사람과 화목하게 지낸다.'
                             }
                         ]
                     },
@@ -217,7 +228,8 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                         name : SOCIAL_VALUE,
                         detailSheets : [
                             {
-                                four : '정직하게 말하고 행동한다.'
+                                four : '정직하게 말하고 행동한다.',
+                                five : '정직하게 말하고 행동한다.'
                             },
                             {
                                 three : '다른 사람의 소유물을 존중한다.',
@@ -225,14 +237,17 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                                 five : '다른 사람을 배려하여 행동한다.'
                             },
                             {
-                                four : '친구와 어른께 예의 바르게 행동한다.'
+                                four : '친구와 어른께 예의 바르게 행동한다.',
+                                five : '친구와 어른께 예의 바르게 행동한다.'
                             },
                             {
                                 three : '약속과 규칙을 지켜야 함을 안다.',
-                                four : '다른 사람과 한 약속이나 공공규칙을 지킨다.'
+                                four : '다른 사람과 한 약속이나 공공규칙을 지킨다.',
+                                five : '다른 사람과 한 약속이나 공공규칙을 지킨다.'
                             },
                             {
-                                four : '자연과 자원을 아끼는 습관을 기른다.'
+                                four : '자연과 자원을 아끼는 습관을 기른다.',
+                                five : '자연과 자원을 아끼는 습관을 기른다.'
                             }
                         ]
                     }
@@ -251,7 +266,8 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                         detailSheets : [
                             {
                                 three : '우리 동네의 이름을 안다.',
-                                four : '우리 동네에 대해 알아본다.'
+                                four : '우리 동네에 대해 알아본다.',
+                                five : '우리 동네에 대해 알아본다.'
                             },
                             {
                                 three : '우리 동네 사람들에 관심을 갖는다.',
@@ -275,10 +291,12 @@ const SOCIAL_RELATIONS_ANSWER : AnswerSheetType = {
                             },
                             {
                                 three : '우리나라의 전통놀이와 풍습에 관심을 갖는다.',
+                                four : '우리나라의 전통놀이와 풍습에 관심을 갖는다.',
                                 five : '우리나라의 전통, 역사, 문화에 관심을 갖는다.'
                             },
                             {
-                                four : '우리나라에 대해 자부심을 갖는다.'
+                                four : '우리나라에 대해 자부심을 갖는다.',
+                                five : '우리나라에 대해 자부심을 갖는다.'
                             }
                         ]
                     },

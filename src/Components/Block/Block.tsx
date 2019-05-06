@@ -11,16 +11,12 @@ interface IProps {
 const Block : SFC<IProps> = ({ contentCategories }) => (
     <div className={ styles.block }>
         {
-            contentCategories.map(contentCategory => {
-                console.log('contentCategory : ', contentCategory);
-                
-                return (
-                    <div key={ contentCategory.key } className={ styles.row }>
-                        <Goal isArea={ false } content={ contentCategory.contentCategoryGoal } type={ 'socialRelations' } />
-                        <ContentCategory contentCategory={ contentCategory } />
-                    </div>
-                )
-            })
+            contentCategories.map(({ key, contentCategoryGoal, contentCategory }) => (
+                <div key={ key } className={ styles.row }>
+                    <Goal isArea={ false } content={ contentCategoryGoal } type={ 'socialRelations' } />
+                    <ContentCategory contentCategory={ contentCategory } type={ 'socialRelations' } />
+                </div>
+            ))
         }
     </div>
 );

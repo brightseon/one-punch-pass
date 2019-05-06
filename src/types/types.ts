@@ -1,3 +1,9 @@
+const PHYSICAL_EXERCISE_HELTH = 'physicalExerciseHelth';
+const COMMUNICATION = 'communication';
+const SOCIAL_RELATIONS = 'socialRelations';
+const ART_EXPERIENCE = 'artExperience';
+const NATURE_INQUIRY = 'natureInquiry';
+
 export interface SectionType {
     key : string;
     sectionName : string;
@@ -44,3 +50,9 @@ export interface DetailSheetsTypes {
     four? : string;
     five? : string;
 };
+
+export type ClassType = typeof PHYSICAL_EXERCISE_HELTH 
+                        | typeof COMMUNICATION 
+                        | typeof SOCIAL_RELATIONS 
+                        | typeof ART_EXPERIENCE 
+                        | typeof NATURE_INQUIRY;

@@ -2,7 +2,8 @@ import React, { Component, ChangeEvent, ChangeEventHandler, Ref } from 'react';
 import AnswerInputPresenter from './AnswerInputPresenter';
 
 interface IProps {
-    idx : number;
+    isIndex? : boolean;
+    idx? : number;
     answer : string;
     inputKey : string;
     isShow : boolean;

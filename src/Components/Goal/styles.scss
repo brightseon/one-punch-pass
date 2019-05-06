@@ -3,6 +3,7 @@
 
     .titleBox {
         @include titleBox;
+        font-weight: bold;
 
         .title {
             color: $textColor;
@@ -55,9 +56,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-        .content {
-            color: $textColor;
-        }
+        padding: 5px;
     }
 }

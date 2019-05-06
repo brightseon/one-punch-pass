@@ -1,4 +1,5 @@
 .answer-input {
+    flex: 1;
     display: flex;
     padding-bottom: 12px;
     align-items: center;
@@ -41,6 +42,7 @@
             font-size: 16px;
             color: $textColor;
             outline: none;
+            background-color: transparent;
         }
 
         
