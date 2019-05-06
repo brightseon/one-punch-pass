@@ -1,4 +1,4 @@
-import React, { SFC } from 'react';
+import React, { SFC, SetStateAction } from 'react';
 import styles from './styles.scss';
 import { ContentCategoryType, ClassType } from '../../types/types';
 import AnswerInput from '../AnswerInput';
@@ -7,9 +7,11 @@ import Button from '../Button';
 interface IProps {
     contentCategory : ContentCategoryType;
     type : ClassType;
+    isShow : boolean;
+    showWrong : () => void;
 };
 
-const ContentCategory : SFC<IProps> = ({ contentCategory : { title, details }, type }) => {
+const ContentCategory : SFC<IProps> = ({ contentCategory : { title, details }, type, isShow, showWrong }) => {
     return (
         <div className={ styles.container }>
             <div className={ styles.contentCategory }>
@@ -35,33 +37,33 @@ const ContentCategory : SFC<IProps> = ({ contentCategory : { title, details }, t
             </div>
             <div className={ styles.contentCategoryBox }>
                 <div className={ `${ styles.mainTitle } ${ styles[type] }` }>
-                    <AnswerInput inputKey={ type } answer={ title } isShow={ false } />
+                    <AnswerInput inputKey={ type } answer={ title } isShow={ isShow } />
                 </div>
                 <div className={ styles.detailBox }>
                     {
                         details.map(({ key, name, detailSheets }) => (
                             <div key={ key } className={ styles.detailRow }>
                                 <div className={ `${ styles.detailTitle } ${ styles[`${ type }Detail`] }`}>
-                                    <AnswerInput inputKey={ key } answer={ name } isShow={ false } />
+                                    <AnswerInput inputKey={ key } answer={ name } isShow={ isShow } />
                                 </div>
                                 <div className={ styles.detailContent }>
                                     {
                                         detailSheets.map(({ three, four, five }, idx) => (
                                             <div key={ idx } className={ styles.content }>
                                                 <div className={ `${ styles.three } ${ three === four ? styles.threeFourMerge : '' } ${ (three === four && three === five) ? styles.threeFourFiveMerge : '' }` }>
-                                                    { three && <AnswerInput inputKey={ `three_${ idx }` } answer={ three } isShow={ false } /> }
+                                                    { three && <AnswerInput inputKey={ `three_${ idx }` } answer={ three } isShow={ isShow } /> }
                                                 </div>
                                                 {
                                                     three !== four && (
                                                         <div className={ `${ styles.four } ${ four === five ? styles.fourFiveMerge : '' }` }>
-                                                            { four && <AnswerInput inputKey={ `four_${ idx }` } answer={ four } isShow={ false } /> }
+                                                            { four && <AnswerInput inputKey={ `four_${ idx }` } answer={ four } isShow={ isShow } /> }
                                                         </div>
                                                     )
                                                 }
                                                 {
                                                     four !== five && (
                                                         <div className={ styles.five }>
-                                                            { five && <AnswerInput inputKey={ `five_${ idx }` } answer={ five } isShow={ false } /> }
+                                                            { five && <AnswerInput inputKey={ `five_${ idx }` } answer={ five } isShow={ isShow } /> }
                                                         </div>
                                                     )
                                                 }
@@ -74,7 +76,7 @@ const ContentCategory : SFC<IProps> = ({ contentCategory : { title, details }, t
                     }
                 </div>
             </div>
-            <Button text="확인" clickCheckButton={ null } />
+            <Button text="확인" clickCheckButton={ showWrong } />
         </div>
     )
 };
