@@ -7,8 +7,7 @@ const App = () => {
 
     return (
         <div className={ styles.app }>
-            {/* <Router isLoggedIn={ isLoggedIn } setIsLoggedIn={ setIsLoggedIn } /> */}
-            <Router isLoggedIn={ true } setIsLoggedIn={ setIsLoggedIn } />
+            <Router isLoggedIn={ isLoggedIn } setIsLoggedIn={ setIsLoggedIn } />
         </div>
     );
 }
