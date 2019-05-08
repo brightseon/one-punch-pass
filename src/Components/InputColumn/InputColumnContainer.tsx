@@ -19,8 +19,6 @@ class InputColumnContainer extends Component<IProps, IState> {
     };
 
     clickCheckButton = () => {
-        console.log('확인 버튼 클릭');
-
         this.setState({
             isShow : true
         });

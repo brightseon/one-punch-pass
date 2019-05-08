@@ -10,7 +10,7 @@ const { SOCIAL_RELATIONS : { areaTarget, contentCategories } } = answerSheets;
 const SocialRelations = () => (
     <div className={ styles.socialRelations }>
         <PageTitle currentPageName="사회관계" />
-        <Goal content={ areaTarget } type={ 'socialRelations' } isShow={ false } />
+        <Goal content={ areaTarget } type={ 'socialRelations' } />
         <Block contentCategories={ contentCategories } />
     </div>
 );

@@ -7,16 +7,16 @@ interface IProps {
     isArea? : boolean;
     content : string;
     type : ClassType;
-    isShow : boolean;
+    isShow? : boolean;
 };
 
-const Goal : SFC<IProps> = ({ isArea = true, content, type, isShow }) => (
+const Goal : SFC<IProps> = ({ isArea = true, content, type, isShow = false }) => (
     <div className={ styles.goal }>
         <div className={ `${ styles.titleBox } ${ styles[type] }` }>
             <span className={ styles.title }>{ isArea ? '영역 목표' : '내용범주 목표' }</span>
         </div>
         <div className={ `${ styles.contentBox } ${ styles[`${ type }Detail`] }` }>
-            <AnswerInput answer={ content } inputKey={ 'contentCategoryGoal' } idx={ 1 } isShow={ isShow } />
+            <AnswerInput isArea={ isArea } answer={ content } inputKey={ 'contentCategoryGoal' } idx={ 1 } isShow={ isShow } />
         </div>
     </div>
 );

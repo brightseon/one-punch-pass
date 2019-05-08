@@ -11,9 +11,11 @@ interface IProps {
     isFail : boolean;
     isShow : boolean;
     resetAnswer : () => void;
+    onBlur : () => void;
+    showGoal : boolean;
 };
 
-const AnswerInputPresenter : SFC<IProps> = ({ isIndex = false, idx, inputKey, value, typingAnswer, isFail, isShow, resetAnswer }) => (
+const AnswerInputPresenter : SFC<IProps> = ({ isIndex = false, idx, inputKey, value, typingAnswer, isFail, isShow, resetAnswer, onBlur, showGoal }) => (
     <div className={ styles.answerInput }>
         {
             isIndex && (
@@ -22,8 +24,8 @@ const AnswerInputPresenter : SFC<IProps> = ({ isIndex = false, idx, inputKey, va
                 </div>
              )
         }
-        <div className={ `${ styles.inputBox } ${ (isShow && isFail) ? styles.failInput : '' }` }>
-            <input className={ styles.input } name={ `${ inputKey }_answer_${ idx }` } type="text" value={ value } onChange={ typingAnswer } autoComplete="off" />
+        <div className={ `${ styles.inputBox } ${ (isShow && isFail) || (showGoal && isFail) ? styles.failInput : '' }` }>
+            <input className={ styles.input } name={ `${ inputKey }_answer_${ idx }` } type="text" value={ value } onChange={ typingAnswer } autoComplete="off" onBlur={ onBlur } />
             <div className={ styles.resetBtnBox } onClick={ resetAnswer }>
                 <img className={ styles.resetBtn } src={ ClearButton } />
             </div>
