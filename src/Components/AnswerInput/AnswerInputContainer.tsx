@@ -1,4 +1,4 @@
-import React, { Component, ChangeEvent, ChangeEventHandler, Ref, useState } from 'react';
+import React, { Component, ChangeEvent, ChangeEventHandler } from 'react';
 import AnswerInputPresenter from './AnswerInputPresenter';
 
 interface IProps {
