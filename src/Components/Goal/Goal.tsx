@@ -10,7 +10,7 @@ interface IProps {
     isShow? : boolean;
 };
 
-const Goal : SFC<IProps> = ({ isArea = true, content, type, isShow = false }) => (
+const Goal : SFC<IProps> = ({ isArea = false, content, type, isShow = false }) => (
     <div className={ styles.goal }>
         <div className={ `${ styles.titleBox } ${ styles[type] }` }>
             <span className={ styles.title }>{ isArea ? '영역 목표' : '내용범주 목표' }</span>

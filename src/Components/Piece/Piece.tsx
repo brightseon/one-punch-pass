@@ -18,7 +18,7 @@ const Piece : SFC<IProps> = ({ contentCategoryGoal, contentCategory }) => {
     
     return (
         <div className={ styles.row }>
-            <Goal isArea={ false } content={ contentCategoryGoal } type={ 'socialRelations' } isShow={ isShow } />
+            <Goal content={ contentCategoryGoal } type={ 'socialRelations' } isShow={ isShow } />
             <ContentCategory contentCategory={ contentCategory } type={ 'socialRelations' } isShow={ isShow } showWrong={ showWrong } />
         </div>
     );
