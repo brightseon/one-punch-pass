@@ -25,20 +25,28 @@ class AnswerInputContainer extends Component<IProps, any> {
 
     typingAnswer : ChangeEventHandler = (e : ChangeEvent<HTMLInputElement>) => {
         const { target : { name, value } } = e;
+        
+        if(this.state[this.stateName] !== '' && value.length === 0) {
+            this.resetAnswer();
 
+            return;
+        }
+        
         this.setState({
             [name] : value
         }, this.correctCheck);
     };
 
     correctCheck = () => {
-        const { isFail } = this.state;
-        
-        if(!isFail) {
-            this.setState({
-                isFail : this.props.answer !== this.state[`${ this.props.inputKey }_answer_${ this.props.idx }`]
-            });
-        }
+        const currentIsFail = this.props.answer !== this.state[this.stateName];
+
+        this.setState((prevState : any) => {
+            if(prevState.isFail !== currentIsFail) {
+                return {
+                    isFail : currentIsFail
+                };
+            }
+        });
     };
 
     resetAnswer = () => {
@@ -52,7 +60,7 @@ class AnswerInputContainer extends Component<IProps, any> {
     onBlur = () => {
         const { isArea } = this.props;
 
-        if(isArea) {
+        if(isArea && this.state[this.stateName] !== '') {
             this.setState({
                 showGoal : true
             }, this.correctCheck);
