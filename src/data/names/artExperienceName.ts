@@ -1,3 +1,56 @@
-const ART_EXPERIENCE_NAME = {};
+const AREA_TARGET = '아름다움에 관심을 가지고 예술 경험을 즐기며, 창의적으로 표현하는 능력을 기른다.';
+
+const SEARCH_WITH_INTEREST_NAME = '자연과 주변 환경에서 발견한 아름다움과 예술적 요소에 관심을 갖고 탐색한다.';
+const CREATIVE_EXPRESSION_NAME = '자신의 생각과 느낌을 음악, 움직임과 춤, 미술, 극놀이를 통해 창의적으로 표현하는 것을 즐긴다.';
+const AESTHETIC_ATTITUDE_NAME = '자연과 다양한 예술 작품을 감상하며, 풍부한 감성과 심미적 태도를 기른다.';
+
+const FIND_BEAUTY_NAME = '아름다움 찾아보기';
+const ARTISTIC_EXPRESSION_NAME = '예술적 표현하기';
+const APPRECIATION_OF_ART_NAME = '예술 감상하기';
+
+const EXPLORE_MUSICAL_ELEMENTS_NAME = '음악적 요소 탐색하기';
+const MOVEMENT_AND_DANCE_ELEMENTS_NAME = '움직임과 춤요소 탐색하기';
+const ART_ELEMENT_NAME = '미술적 요소 탐색하기';
+
+const EXPRESSED_IN_MUSIC_NAME = '음악으로 표현하기';
+const EXPRESSED_MOVEMENT_AND_DANCE_NAME = '움직임과 춤으로 표현하기';
+const EXPRESSED_IN_ART_ACTIVITIES_NAME = '미술 활동으로 표현하기';
+const EXPRESSED_IN_DRAMATIC_PLAY_NAME = '극놀이로 표현하기';
+const EXPRESSED_INTEGRALLY_NAME = '통합적으로 표현하기';
+
+const ENJOY_VARIOUS_ARTS_NAME = '다양한 예술 감상하기';
+const ENJOYING_TRADITIONAL_ART_NAME = '전통예술 감상하기';
+
+const CONTENT_CATEGORY_GOALS = {
+    SEARCH_WITH_INTEREST_NAME,
+    CREATIVE_EXPRESSION_NAME,
+    AESTHETIC_ATTITUDE_NAME
+};
+
+const CONTENT_CATEGORIES = {
+    FIND_BEAUTY_NAME,
+    ARTISTIC_EXPRESSION_NAME,
+    APPRECIATION_OF_ART_NAME
+};
+
+const DETAIL_CONTENTS = {
+    EXPLORE_MUSICAL_ELEMENTS_NAME,
+    MOVEMENT_AND_DANCE_ELEMENTS_NAME,
+    ART_ELEMENT_NAME,
+    EXPRESSED_IN_MUSIC_NAME,
+    EXPRESSED_MOVEMENT_AND_DANCE_NAME,
+    EXPRESSED_IN_ART_ACTIVITIES_NAME,
+    EXPRESSED_IN_DRAMATIC_PLAY_NAME,
+    EXPRESSED_INTEGRALLY_NAME,
+    ENJOY_VARIOUS_ARTS_NAME,
+    ENJOYING_TRADITIONAL_ART_NAME
+};
+
+const ART_EXPERIENCE_NAME = {
+    AREA_TARGET,
+    CONTENT_CATEGORY_GOALS,
+    CONTENT_CATEGORIES,
+    DETAIL_CONTENTS
+};
 
 export default ART_EXPERIENCE_NAME;

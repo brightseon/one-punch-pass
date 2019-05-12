@@ -10,6 +10,8 @@ $communicationDetailColor : #FBFFB9;
 $socialRelationsColor : #E85A71;
 $socialRelationsDetailColor : #FEC9C9;
 $artExperienceColor : #A593E0;
+$artExperienceDetailColor : #DEDCEE;
+// $artExperienceDetailColor : #D1B6E1;
 $natureInquiryColor : #60C5BA;
 
 :export {
@@ -22,5 +24,6 @@ $natureInquiryColor : #60C5BA;
     socialRelationsColor : $socialRelationsColor;
     socialRelationsDetailColor : $socialRelationsDetailColor;
     artExperienceColor : $artExperienceColor;
+    artExperienceDetailColor : $artExperienceDetailColor;
     natureInquiryColor : $natureInquiryColor;
 };
