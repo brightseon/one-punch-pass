@@ -5,7 +5,6 @@
         
         .title {
             @include titleBox;
-            background-color: $socialRelationsColor;
             padding: 9px;
         }
 
@@ -15,7 +14,6 @@
 
             .content {
                 flex: 0.2;
-                background-color: $socialRelationsDetailColor;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -39,46 +37,6 @@
             @include titleBox;
             font-weight: bold;
             padding: 9px;
-        }
-
-        .physical-exercise-helth {
-            background-color: $physicalExerciseHealthColor;
-        }
-
-        .physical-exercise-helth-detail {
-
-        }
-
-        .communication {
-            background-color: $communicationColor;
-        }
-
-        .communication-detail {
-
-        }
-
-        .social-relations {
-            background-color: $socialRelationsColor;
-        }
-
-        .social-relations-detail {
-            background-color: $socialRelationsDetailColor;
-        }
-
-        .art-experience {
-            background-color: $artExperienceColor;
-        }
-
-        .art-experience-detail {
-
-        }
-
-        .nature-inquiry {
-            background-color: $natureInquiryColor;
-        }
-
-        .nature-inquiry-detail {
-
         }
 
         .detail-box {

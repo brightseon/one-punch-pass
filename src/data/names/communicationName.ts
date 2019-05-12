@@ -1,3 +1,63 @@
-const COMMUNICATION_NAME = {};
+const AREA_TARGET = '일상생활에 필요한 의사소통 능력과 바른 언어 사용 습관을 기른다.';
+
+const LISTEN_CAREFULLY_NAME = '다른 사람의 말을 주의 깊게 듣는 태도와 이해하는 능력을 기른다.';
+const SPEECH_NAME = '자신의 생각과 느낌을 말하는 능력을 기른다.';
+const RECOGNIZE_CHARACTER_SHAPE_INTERESTED_IN_READING_NAME = '글자와 책에 친숙해지는 경험을 통하여 글자 모양을 인식하고 읽기에 흥미를 가진다.';
+const THOUGHT_FEEL_EXPERIENCE_INTEREST_IN_WRITING_NAME = '말과 글의 관계를 알고 자신의 생각, 느낌, 경험을 글로 표현하는 데 관심을 가진다.';
+
+const LISTEN_NAME = '듣기';
+const SPEAK_NAME = '말하기';
+const READ_NAME = '읽기';
+const WRITING_NAME = '쓰기';
+
+const WORDS_AND_SENTENCES_LISTEN_NAME = '낱말과 문장 듣고 이해하기';
+const STORY_LISTEN_NAME = '이야기 듣고 이해하기';
+const SONG_POEN_STORY_LISTEN_NAME = '동요, 동시, 동화 듣고 이해하기';
+const RIGHT_ATTITUDE_LISTEN_NAME = '바른 태도로 듣기';
+
+const WORDS_AND_SENTENCES_SPEAK_NAME = '낱말과 문장으로 말하기';
+const FEEL_THOUGHT_EXPERIENCE_SPEAK_NAME = '느낌, 생각, 경험 말하기';
+const RIGHT_ATTITUDE_SPEAK_NAME = '상황에 맞게 바른 태도로 말하기';
+
+const INTERESTED_IN_READING_NAME = '읽기에 흥미 가지기';
+const INTERESTED_IN_READING_BOOKS_NAME = '책 읽기에 관심 가지기';
+
+const INTERESTED_IN_WRITING_NAME = '쓰기에 관심 가지기';
+const USING_WRITING_TOOLS_NAME = '쓰기 도구 사용하기';
+
+const CONTENT_CATEGORY_GOALS = {
+    LISTEN_CAREFULLY_NAME,
+    SPEECH_NAME,
+    RECOGNIZE_CHARACTER_SHAPE_INTERESTED_IN_READING_NAME,
+    THOUGHT_FEEL_EXPERIENCE_INTEREST_IN_WRITING_NAME
+};
+
+const CONTENT_CATEGORIES = {
+    LISTEN_NAME,
+    SPEAK_NAME,
+    READ_NAME,
+    WRITING_NAME
+};
+
+const DETAIL_CONTENTS = {
+    WORDS_AND_SENTENCES_LISTEN_NAME,
+    STORY_LISTEN_NAME,
+    SONG_POEN_STORY_LISTEN_NAME,
+    RIGHT_ATTITUDE_LISTEN_NAME,
+    WORDS_AND_SENTENCES_SPEAK_NAME,
+    FEEL_THOUGHT_EXPERIENCE_SPEAK_NAME,
+    RIGHT_ATTITUDE_SPEAK_NAME,
+    INTERESTED_IN_READING_NAME,
+    INTERESTED_IN_READING_BOOKS_NAME,
+    INTERESTED_IN_WRITING_NAME,
+    USING_WRITING_TOOLS_NAME
+};
+
+const COMMUNICATION_NAME = {
+    AREA_TARGET,
+    CONTENT_CATEGORY_GOALS,
+    CONTENT_CATEGORIES,
+    DETAIL_CONTENTS
+};
 
 export default COMMUNICATION_NAME;

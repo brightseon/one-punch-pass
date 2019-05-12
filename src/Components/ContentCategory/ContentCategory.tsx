@@ -1,8 +1,9 @@
-import React, { SFC, SetStateAction } from 'react';
+import React, { SFC } from 'react';
 import styles from './styles.scss';
 import { ContentCategoryType, ClassType } from '../../types/types';
 import AnswerInput from '../AnswerInput';
 import Button from '../Button';
+import colors from '../../variables/_colors.scss';
 
 interface IProps {
     contentCategory : ContentCategoryType;
@@ -15,11 +16,11 @@ const ContentCategory : SFC<IProps> = ({ contentCategory : { title, details }, t
     return (
         <div className={ styles.container }>
             <div className={ styles.contentCategory }>
-                <div className={ styles.title }>
+                <div className={ `${ styles.title }` } style={{ backgroundColor : colors[`${ type }Color`] }}>
                     <span>내용범주</span>
                 </div>
                 <div className={ styles.subTitle }>
-                    <div className={ styles.content }>
+                    <div className={ styles.content } style={{ backgroundColor : colors[`${ type }DetailColor`] }}>
                         <span>내용</span>
                     </div>
                     <div className={ styles.age }>
@@ -36,14 +37,14 @@ const ContentCategory : SFC<IProps> = ({ contentCategory : { title, details }, t
                 </div>
             </div>
             <div className={ styles.contentCategoryBox }>
-                <div className={ `${ styles.mainTitle } ${ styles[type] }` }>
+                <div className={ `${ styles.mainTitle }` } style={{ backgroundColor : colors[`${ type }Color`] }}>
                     <AnswerInput inputKey={ type } answer={ title } isShow={ isShow } />
                 </div>
                 <div className={ styles.detailBox }>
                     {
                         details.map(({ key, name, detailSheets }) => (
                             <div key={ key } className={ styles.detailRow }>
-                                <div className={ `${ styles.detailTitle } ${ styles[`${ type }Detail`] }`}>
+                                <div className={ styles.detailTitle } style={{ backgroundColor : colors[`${ type }DetailColor`] }} >
                                     <AnswerInput inputKey={ key } answer={ name } isShow={ isShow } />
                                 </div>
                                 <div className={ styles.detailContent }>

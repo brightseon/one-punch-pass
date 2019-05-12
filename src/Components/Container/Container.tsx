@@ -1,4 +1,5 @@
-import React, { SFC, Fragment } from 'react';
+import React, { SFC } from 'react';
+import styles from './styles.scss';
 import { ClassType, ContentCategoriesType } from '../../types/types';
 import Goal from '../Goal';
 import Block from '../Block';
@@ -10,10 +11,10 @@ interface IProps {
 };
 
 const Container : SFC<IProps> = ({ areaTarget, type, contentCategries }) => (
-    <Fragment>
+    <div className={ styles.container }>
         <Goal isArea={ true } content={ areaTarget } type={ type } />
-        <Block contentCategories={ contentCategries } />
-    </Fragment>
+        <Block contentCategories={ contentCategries } type={ type } />
+    </div>
 );
 
 export default Container;

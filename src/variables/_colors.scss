@@ -4,8 +4,21 @@ $wrongAnswerBorderColor : #FE4365;
 $summaryColor : #99F19E;
 $summaryDetailColor : #CFF0DA;
 $physicalExerciseHealthColor : #4EA1D3;
-$communicationColor : #F6EA8C;
+$communicationColor : #FEEE7D;
+$communicationDetailColor : #FBFFB9;
 $socialRelationsColor : #E85A71;
 $socialRelationsDetailColor : #FEC9C9;
 $artExperienceColor : #A593E0;
 $natureInquiryColor : #60C5BA;
+
+:export {
+    summaryColor : $summaryColor;
+    summaryDetailColor : $summaryDetailColor;
+    physicalExerciseHealthColor : $physicalExerciseHealthColor;
+    communicationColor : $communicationColor;
+    communicationDetailColor : $communicationDetailColor;
+    socialRelationsColor : $socialRelationsColor;
+    socialRelationsDetaiilColor : $socialRelationsDetailColor;
+    artExperienceColor : $artExperienceColor;
+    natureInquiryColor : $natureInquiryColor;
+};
