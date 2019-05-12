@@ -1,10 +1,6 @@
-import React, { Component, createRef, Ref, SFC, FunctionComponentElement, FunctionComponent, RefObject } from 'react';
+import React, { SFC, useState } from 'react';
 import InputColumnPresetner from './InputColumnPresenter';
 import { SummaryDetailAnswerType } from '../../types/types';
-
-interface IState {
-    isShow : boolean;
-};
 
 interface IProps {
     columnKey : string;
@@ -13,22 +9,15 @@ interface IProps {
     detailSheets : SummaryDetailAnswerType[];
 };
 
-class InputColumnContainer extends Component<IProps, IState> {
-    state = {
-        isShow : false
+const InputColumnContainer : SFC<IProps> = ({ columnKey, answerSheetName, answerSheets, detailSheets }) => {
+    const [isShow, toggleIsShow] = useState(false);
+
+    const clickCheckButton = () => {
+        toggleIsShow(true);
     };
 
-    clickCheckButton = () => {
-        this.setState({
-            isShow : true
-        });
-    };
-
-    render() {
-        const { isShow } = this.state;
-
-        return <InputColumnPresetner { ...this.props } isShow={ isShow } clickCheckButton={ this.clickCheckButton } />;
-    };
-}
+    return <InputColumnPresetner columnKey={ columnKey } answerSheetName={ answerSheetName } answerSheets={ answerSheets } 
+        detailSheets={ detailSheets } isShow={ isShow } clickCheckButton={ clickCheckButton } />;
+};
 
 export default InputColumnContainer;

@@ -32,11 +32,13 @@ class AnswerInputContainer extends Component<IProps, any> {
     };
 
     correctCheck = () => {
-        const isFail = this.props.answer !== this.state[`${ this.props.inputKey }_answer_${ this.props.idx }`];
+        const { isFail } = this.state;
         
-        this.setState({
-            isFail
-        });
+        if(!isFail) {
+            this.setState({
+                isFail : this.props.answer !== this.state[`${ this.props.inputKey }_answer_${ this.props.idx }`]
+            });
+        }
     };
 
     resetAnswer = () => {

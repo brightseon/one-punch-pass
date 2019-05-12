@@ -14,7 +14,9 @@ const Piece : SFC<IProps> = ({ contentCategoryGoal, contentCategory, type }) => 
     const [isShow, toggleIsShow] = useState(false);
     
     const showWrong = () => {
-        toggleIsShow(true);
+        if(!isShow) {
+            toggleIsShow(true);
+        }
     };
     
     return (
