@@ -1,4 +1,4 @@
-const PHYSICAL_EXERCISE_HELTH = 'physicalExerciseHelth';
+const PHYSICAL_EXERCISE_HEALTH = 'physicalExerciseHealth';
 const COMMUNICATION = 'communication';
 const SOCIAL_RELATIONS = 'socialRelations';
 const ART_EXPERIENCE = 'artExperience';
@@ -51,7 +51,7 @@ export interface DetailSheetsTypes {
     five? : string;
 };
 
-export type ClassType = typeof PHYSICAL_EXERCISE_HELTH 
+export type ClassType = typeof PHYSICAL_EXERCISE_HEALTH 
                         | typeof COMMUNICATION 
                         | typeof SOCIAL_RELATIONS 
                         | typeof ART_EXPERIENCE 
