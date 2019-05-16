@@ -10,9 +10,11 @@ $communicationDetailColor : #FBFFB9;
 $socialRelationsColor : #E85A71;
 $socialRelationsDetailColor : #FEC9C9;
 $artExperienceColor : #A593E0;
-$artExperienceDetailColor : #DEDCEE;
+$artExperienceDetailColor : #CBBFF2;
 // $artExperienceDetailColor : #D1B6E1;
 $natureInquiryColor : #60C5BA;
+// $natureInquiryDetailColor : #8EDFD6;
+$natureInquiryDetailColor : #C5F3F0;
 
 :export {
     summaryColor : $summaryColor;
@@ -26,4 +28,5 @@ $natureInquiryColor : #60C5BA;
     artExperienceColor : $artExperienceColor;
     artExperienceDetailColor : $artExperienceDetailColor;
     natureInquiryColor : $natureInquiryColor;
+    natureInquiryDetailColor : $natureInquiryDetailColor;
 };
